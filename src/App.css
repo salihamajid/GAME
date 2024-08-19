@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box; /* added to ensure consistent box model */
+    margin: 0; /* reset margin to 0 */
+    padding: 0; /* reset padding to 0 */
+    font-family: sans-serif;
+  }
+  
+  body {
+    min-height: 100vh; /* set minimum height to 100vh */
+    display: flex; /* added to center the content horizontally */
+    justify-content: center; /* added to center the content horizontally */
+    background-color: #f7f7f7; /* added a light gray background color */
+  }
+  
+  .illustration img {
+    max-height: 500px;
+    width: auto;
+    border-radius: 10px; /* added a subtle border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added a subtle box shadow */
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column; /* changed to column layout */
+    align-items: center;
+    padding: 2rem; /* added some padding */
+    max-width: 800px; /* set a maximum width */
+    margin: 0 auto; /* center the wrapper horizontally */
+    background-color: #ffffff; /* added a white background color */
+    border-radius: 10px; /* added a subtle border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added a subtle box shadow */
+  }
+  
+  .wrapper p {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    color: #666; /* added a darker text color */
+  }
+  
+  .form {
+    padding: 1.5rem;
+    flex-basis: 100%; /* changed to 100% */
+    justify-content: center;
+  }
+  
+  .form .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333; /* added a darker text color */
+  }
+  
+  .or {
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    color: #666; /* added a darker text color */
+  }
+  
+  .form label {
+    display: block;
+    margin: 1.25rem 0 1rem 0;
+    font-size: 0.85rem;
+    color: #666; /* added a darker text color */
+  }
+  
+  .form input {
+    height: 50px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 2px solid #ccc; 
+    border-radius: 2px;
+    color: black;
+    width: 100%; /* changed to 100% width */
+  }
+  
+  .form button {
+    width: 100%; /* changed to 100% width */
+    height: 40px;
+    background-color: #310576;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer; /* added a pointer cursor */
+  }
+  
+  .form button:hover {
+    filter: brightness(95%);
+  }
+  
+  .form button:active {
+    transform: scale(0.98);
+  }
+  
+  .selectors {
+    background-color: #1A202C;
+  }
+  
+  /* Media queries */
+  
+  @media (min-width: 542px) {
+    .wrapper {
+      flex-direction: row; /* changed to row layout */
+      justify-content: space-around;
+      padding: 1.5rem;
+      max-width: 1100px;
+    }
+    .form {
+      flex-basis: 40%; /* changed to 40% width */
+    }
+    .illustration img {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .illustration {
+      display: none;
+    }
+  }
+  
+  .signUp .illustration {
+    order: 2;
+    justify-self: flex-end;
+    margin-left: 2rem;
+  }
